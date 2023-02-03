@@ -1,12 +1,12 @@
 import { useState } from 'react';
+import LadingSection from './components/LadingSection';
 import Nav from './components/Nav';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <Nav />
+      <LadingSection image="/assets/hand2.png" />
     </>
   );
 }
