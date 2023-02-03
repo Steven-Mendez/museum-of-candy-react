@@ -1,10 +1,28 @@
 import './Nav.css';
+import React, { useState, useEffect } from 'react';
 
 function Nav() {
+  const [navbar, setNavbar] = useState(false);
+
+  const changeBackground = () => {
+    if (window.scrollY >= 56) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  useEffect(() => {
+    changeBackground();
+    window.addEventListener('scroll', changeBackground);
+  });
+
   return (
     <nav
       id="navbar"
-      className="navbar navbar-expand-md navbar-dark fixed-top mx-3"
+      className={`navbar navbar-expand-md navbar-dark fixed-top px-3 ${
+        navbar ? 'active' : ''
+      }`}
     >
       <a className="navbar-brand" href="#">
         CANDY

@@ -10,3 +10,8 @@
 #navbar .nav-link:hover {
   color: #ea1c2c;
 }
+
+#navbar.active {
+  background-color: #dec0de;
+  transition: all 0.5s;
+}
