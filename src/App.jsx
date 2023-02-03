@@ -1,4 +1,4 @@
-import LadingSection from './components/LadingSection';
+import LadingSection from './components/LandingSection';
 import Nav from './components/Nav';
 
 function App() {

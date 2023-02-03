@@ -1,6 +1,6 @@
-import './LadingSection.css';
+import './LandingSection.css';
 
-function LadingSection({ title, text, image, type, alt }) {
+function LandingSection({ title, text, image, type, alt }) {
   if (type === 'type1') {
     return (
       <section className="container-fluid px-0">
@@ -88,4 +88,4 @@ function LadingSection({ title, text, image, type, alt }) {
   );
 }
 
-export default LadingSection;
+export default LandingSection;
