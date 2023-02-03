@@ -43,7 +43,7 @@ function LadingSection({ title, text, image, type, alt }) {
           </div>
         </div>
         <div className="col-md-6 px-0">
-          <img className="img-fluid" src={image} alt="" />
+          <img className="img-fluid" src={image} alt={alt} />
         </div>
       </div>
     );
